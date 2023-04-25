@@ -15,3 +15,8 @@ ssh -i /Downloads/mySSHKey.pem azureuser@10.0.0.249
 
 1. Compile the C code using the gcc compiler, for example: `gcc overflow.c -o overflow`
 2. Run the overflow, for example: `./overflow`
+
+## Rust Unsafe Overflow
+
+1. Compile the rust code using the rust compiler, for example: `rustc overflow_unsafe.rs`
+2. Run the overflow, for example: `./overflow_unsafe`
