@@ -11,10 +11,10 @@ You will first need to access the VM:
 ssh -i /Downloads/mySSHKey.pem azureuser@10.0.0.249
 ```
 
-Now install the GNU C Compiler (GCC):
+Now install the build-essetial packages including the GNU C Compiler (GCC) and GNU Debugger (GDB):
 
 ```sh
-sudo apt-get install gcc
+sudo apt-get install build-essential
 ```
 
 Then install the rust compiler, rustup rust installer and version manager, and cargo package manager from the rust website:
