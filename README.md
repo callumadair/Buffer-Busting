@@ -5,13 +5,15 @@ Definitely don't compile and run these as executables, this is just for research
 
 # Steps
 
-You will first need to access the VM:
+First, download the private ssh key that should have been provided to you.
+
+Using the provided ssh key you will first need to access the VM:
 
 ```sh
 ssh -i /Downloads/mySSHKey.pem azureuser@10.0.0.249
 ```
 
-Now install the build-essetial packages including the GNU C Compiler (GCC) and GNU Debugger (GDB):
+Now install the build-essential packages including the GNU C Compiler (GCC) and GNU Debugger (GDB):
 
 ```sh
 sudo apt-get install build-essential
@@ -22,6 +24,19 @@ Then install the rust compiler, rustup rust installer and version manager, and c
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+Now install git:
+
+```sh
+sudo apt install git-all
+```
+
+Then clone this repository in a directory of your choice:
+
+```sh
+git clone https://github.com/callumadair/Buffer-Busting.git
+```
+Now navigate to the source code files and perform the following steps:
 
 ## C Buffer overflow
 
