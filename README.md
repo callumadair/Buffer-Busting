@@ -8,7 +8,7 @@ Definitely don't compile and run these as executables, this is just for research
 You will first need to access the VM:
 
 ```sh
-ssh -i /Downloads/mySSHKey.pem azureuser 10.0.0.249
+ssh -i /Downloads/mySSHKey.pem azureuser@10.0.0.249
 ```
 
 ## C Buffer overflow
