@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     printf("------------------------------------------\n\n");
 
     // Print the difference between the Heap buffer and the writable buffer
-    printf("%-20s %-12u\n", "Heap-Writable diff:", (int) diff);
+    printf("%s %u bytes\n", "Heap-Writable diff:", (unsigned int) diff);
 
     // Fill the writable buffer with 'W's and print it
     memset(wbuf, 'W', BUFSIZE - 1);
