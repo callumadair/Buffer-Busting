@@ -8,7 +8,7 @@ void overflow(char *input_str) {
 }
 
 int main(char* argv[], int argc) {
-	char rand_str[] = "aaaabbbb\x6c\x73\x20\x2d\x6c\x61\ddeeee";
+	char rand_str[] = "aaaabbbb" "\x6c\x73\x20\x2d\x6c\x61" "ddeeee";
 	overflow(rand_str);
 	return 0;
 }
