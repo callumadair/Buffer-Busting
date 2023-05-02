@@ -35,7 +35,8 @@ int main(int argc, char *argv[]) {
     wbuf[BUFSIZE - 1] = '\0';
     printf("%-20s %-12s\n", "Writable Before Overwrite:", wbuf);
 
-    // Overwrite the heap buffer with 'B's and print the writable buffer again
+    // Overwrite the heap buffer with 'B's, overflowing into writable buffer
+    // Print the writable buffer again
     memset(heap_buf, 'B', (uintptr_t) (diff + 8));
     printf("%-20s %-12s\n", "Writeable After overwrite:", wbuf);
 
