@@ -12,7 +12,7 @@ uintptr_t get_esp_value() {
 
 int main(int argc, char *argv[]) {
     char *heap_buf, *wbuf; // Pointers to heap-allocated buffers
-    unsigned int diff; // Difference between heap-allocated buffers
+    uintptr_t diff; // Difference between heap-allocated buffers
 
     // Allocate memory for heap buffers and calculate the difference between them
     heap_buf = (char *) malloc(BUFSIZE);
