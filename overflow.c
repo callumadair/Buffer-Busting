@@ -5,7 +5,7 @@
 
 int main(char* argv[], int argc) {
         // In a normal situation we would have out string taken as input, to make things easier to demo, we have our string inside the program ready to go      
-        // char rand_str[64];
+        // char rand_str[32];
         // gets(rand_str);
 
         //our malicious input will look something like this, containing 27 bad chars, so we need 5 padding chars minus one for the null terminator.
