@@ -32,7 +32,6 @@ int main(int argc, char *argv[]) {
 
     // Fill the writable buffer with 'W's and print it
     memset(wbuf, 'W', BUFSIZE - 1);
-    wbuf[BUFSIZE - 1] = '\0';
     printf("%-20s %-12s\n", "Writable Before Overwrite:", wbuf);
 
     // Overwrite the heap buffer with 'B's, overflowing into writable buffer
