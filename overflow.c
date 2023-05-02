@@ -22,7 +22,7 @@ int main(char* argv[], int argc) {
 	"\x6c\x73\x20\x2d\x6c\x61";
 
 	 uintptr_t diff = (uintptr_t) __builtin_frame_address(0) - (uintptr_t) rand_str;
-	 printf("%p\n", (uintptr_t) diff);
+	 printf("%p\n", (int) diff);
 	
 	// char rand_str[64];
 	// gets(rand_str);
